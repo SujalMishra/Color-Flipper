@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colour Flipper</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        header{
+               width: 100vw;
+               color: white;
+               height: 20vh;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               background-color: black;
+               text-align: center;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 80vh;
+            width: 100vw;
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 20vh;
+            width: 50vw;
+            border: 2px solid black;
+            border-radius: 60px;
+        }
+        #btn{
+            height: 50px;
+            font-weight: bold;
+            width: 100px;
+            background-color: rgb(230, 89, 24) ;
+            border: 2px solid black;
+            border-radius: 20px;
+        }
+        button:hover{
+            background-color: rgb(33, 192, 33);
+            transform: translateY(-3px);
+        }
+        #color{
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+       
+            <h1>Color Flipper</h1>
+       
+    </header>
+    <div class="container">
+        <div class="box">
+            <button id="btn">Change</button>
+            <h2 id="color"></h2>
+        </div>
+    </div>
+
+<script src="main.js"></script>
+</body>
+</html>
